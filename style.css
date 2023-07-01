@@ -1,0 +1,519 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400;600;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --CorFundo: #2c8472;
+  --CorSub: #41a38f;
+  --font-family: "Noto Sans", sans-serif;
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: var(--CorFundo);
+  color: white;
+  font-family: var(--font-family);
+}
+/* Estilizando Logo + Icones */
+
+.containerNav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  text-align: left;
+  margin-left: 5vh;
+  margin-top: 1vh;
+}
+.containerNav #imgIcon {
+  width: 3vw;
+}
+.containerNav #imgIcon2 {
+  width: 4vw;
+}
+
+.telefone {
+  width: 30vw;
+  margin-left: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#texto-1 {
+  font-weight: 300;
+}
+
+.endereco {
+  width: 35vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+/* Estilizando NavBar */
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+nav ul {
+  background-color: var(--CorSub);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 1vh;
+  height: 6vh;
+  font-size: 13px;
+}
+
+.menu li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  width: 12vw;
+  height: 6vh;
+  margin-left: 32px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.menu li:hover {
+  background-color: var(--CorFundo);
+  cursor: pointer;
+}
+
+/* Estilizando Home */
+.home {
+  margin-top: -5vh;
+  height: 45vh;
+  font-size: 5vh;
+  background-color: var(--CorFundo);
+  background-image: url(img/fundo2.jpg);
+  background-blend-mode: multiply;
+object-fit: cover;
+}
+
+.home .texto-1 {
+  margin-left: 2vh;
+  margin-top: 5vh;
+  font-weight: 300;
+  height: 2vh;
+}
+.home .texto-2 {
+  margin-left: 2vh;
+  font-weight: 600;
+}
+
+#imgBtn {
+  width: 2vh;
+  margin-left: 1vw;
+}
+
+.home .texto-3 {
+  margin-left: 2vh;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.home button {
+  margin-top: 5vh;
+  padding: 1vh 2vw;
+  margin-left: 2vh;
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  color: var(--CorFundo);
+}
+
+.home button:hover {
+  color: var(--CorSub);
+  cursor: pointer;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.568);
+}
+
+.home .texto-4 {
+  margin-left: 2vh;
+  margin-top: 3vh;
+  font-weight: 100;
+  font-size: 16px;
+}
+
+/* Estilizando Home */
+
+.bemvindo {
+  height: 40vh;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.bemvindo h1 {
+  margin-bottom: 5vh;
+  font-size: 5vh;
+}
+/* Estilizando Doutora */
+.doutora {
+    margin-left: 2vh;
+
+  background-color: var(--CorFundo);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.doutora h1 {
+  font-size: 3vw;
+  margin-top: 5vh;
+  font-weight: 600;
+}
+
+.divDoutora {
+  display: flex;
+}
+
+.doutoraFoto {
+  margin-top: 2rem;
+  width: 15vw;
+}
+
+/* Estilizando nossos-servicos */
+
+.nossos-servicos {
+  height: 60vh;
+  background-color: white;
+  object-fit: cover;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.nossos-servicos h1 {
+  margin-bottom: 5vh;
+  font-size: 5vh;
+}
+
+.cards,
+.cards2 {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.nossos-servicos button {
+  margin-top: 5vh;
+  padding: 1vh 1vw;
+  margin-left: 2vh;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  background-color: var(--CorFundo);
+  color: white;
+}
+
+/* Estilizando local */
+
+.local {
+  height: 80vh;
+  background-color: var(--CorFundo);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.local h2 {
+  margin-top: 2vh;
+  font-size: 2vw;
+  font-weight: 600;
+}
+
+.fotos {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.local p {
+  margin-top: -2vh;
+}
+
+.local .foto {
+  margin-top: 3vh;
+  width: 220px;
+  height: 200px;
+  object-fit: cover;
+  border: 3px solid white;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.384);
+}
+
+/* Estilizando depoimentos */
+
+.depoimentos {
+  height: 50vh;
+  margin-top: 3vh;
+  padding-top: 2vh;
+  background-color: white;
+  color: black;
+}
+
+.depoimento {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.depoimentos h1 {
+  color: black;
+  text-align: center;
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.depoimento .foto {
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  box-shadow: 1px 0px 10px black;
+}
+
+/* Estilizando localizacao */
+
+.localizacoes {
+  display: flex;
+  height: 45vh;
+  margin-top: 2vh;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.localizacoes .texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.localizacoes .texto h1 {
+  font-size: 5vh;
+  font-weight: 500;
+  margin-bottom: 2vh;
+  margin-left: 2vh;
+}
+
+.localizacoes .texto p {
+  margin-left: 2vh;
+  margin-bottom: 1vh;
+  font-weight: 100;
+}
+
+.localizacoes .texto button {
+  margin-top: 5vh;
+  padding: 1vh ;
+  width: 15vw;
+  height: 5vh;
+  margin-left: 2vh;
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  color: var(--CorFundo);
+  cursor: pointer;
+}
+
+.localizacoes .texto button:hover {
+  color: var(--CorSub);
+  cursor: pointer;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.568);
+}
+
+/* Estilizando Footer */
+
+footer {
+  background-color: var(--CorSub);
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 12px;
+}
+
+
+/* Estilizando Menu Mobile */
+
+.mobile-menu{
+  display: none;
+}
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+
+@media (max-width: 930px){
+  .containerNav .telefone, .endereco{
+    display: none;
+  }
+
+  body{
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 600px){
+
+
+.nav-list{
+  position: absolute;
+  top: 8vh;
+  right: 0;
+  width: 23vw;
+  height: 92vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in;
+}
+.nav-list li{
+margin-left: 0;
+opacity: 1;
+border-bottom: 1px solid white;
+}
+
+.mobile-menu{
+  display: block;
+  position: absolute;
+  top: 3vh;
+  right: 7vw;
+}
+
+.nav-list.active{
+transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
+.home .texto-1{
+  font-size: 6vh;
+}
+
+.home .texto-3{
+  font-size: 2vh;
+}
+
+.doutora h1{
+  font-size: 6vh;
+}
+.doutora p{
+font-size: 2vh;
+}
+
+.local h2{
+  font-size: 4vh;
+}
+.local .fotos, .fotos{
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+}
+.local .foto{
+  width: 150px;
+  height: 150px;
+}
+.depoimentos{
+
+  height: 65vh;
+}
+
+.localizacao{
+  height: 65vh;
+}
+.localizacoes{
+  margin-top: -5vh;
+  width: 100%;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+
+}
+
+.localizacoes .texto{
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+}
+
+.localizacoes .texto button{
+  width: 200px;
+}
+
+.localizacoes .mapa iframe{
+  width: 100vw;
+  height: 50vh;
+  border: 1px solid red;
+}
+
+footer{
+margin-top: 40vh;
+
+}
+}
