@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>| Landing Page - Clínica |</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
   </head>
@@ -35,11 +36,11 @@
 
 <ul class="nav-list">
     <li><a href="">Home</a></li>
-    <li><a href="">Sobre Mim</a></li>
-    <li><a href="">Serviços</a></li>
-    <li><a href="">Local de Atentimento</a></li>
-    <li><a href="">Depoimento</a></li>
-    <li><a href="">Contato</a></li>
+    <li><a href="#sobreDoutora">Sobre Mim</a></li>
+    <li><a href="#sobreServicos">Serviços</a></li>
+    <li><a href="#localAtendimento">Local de Atentimento</a></li>
+    <li><a href="#depoimentoLocal">Depoimento</a></li>
+    <li><a href="#contato">Contato</a></li>
 </ul>
 </nav>
 </div>
@@ -60,7 +61,7 @@
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora quidem quas atque unde iure et laboriosam ullam? Sequi perspiciatis voluptas doloremque ullam impedit quidem nam vel libero a. Praesentium, eveniet.</p>
 </section>
 
-<Section class="doutora">
+<Section id="sobreDoutora" class="doutora">
 
     <div class="texto">
 <h1>Dra. Martha Schmidt</h1>
@@ -68,12 +69,12 @@
 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, labore impedit! Similique nemo sint quaerat facere nulla deserunt sed quasi dolore beatae eos, ipsum, provident ad maiores ex eaque minus.</p>
     </div>
 <div class="divDoutora">
-    <img src="img/dra.png"  class="doutoraFoto" alt="">
+    <img src="img/dra.png"  class="doutoraFoto" alt="" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-out">
 </div>
 
 </Section>
 
-<section class="nossos-servicos">
+<section id="sobreServicos" class="nossos-servicos">
     <h1>Nossos Serviços</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam laborum tempora eligendi ex labore </p>
 
@@ -97,7 +98,7 @@
 
 </section>
 
-<Section class="local">
+<Section id="localAtendimento" class="local">
 <h2>Local de Atendimento</h2><br>
 <p>Av. Paulista, 500 – Bela Vista, São Paulo – SP – CEP 01310-000 </p>
 
@@ -114,13 +115,13 @@
 
 </Section>
 
-<section class="depoimentos">
+<section id="depoimentoLocal" class="depoimentos">
     
     <div>
         <h1>Depoimentos</h1>
         <br>
 </div>
-        <div class="depoimento">
+        <div  class="depoimento">
 
 <div>
 <img  class="foto" src="img/profissoes/002.jpeg" alt="" class="foto-paciente">
@@ -140,7 +141,7 @@
     
 </section>
 
-<section class="localizacao">
+<section id="contato" class="localizacao">
 <div class="localizacoes">
 <div class="texto">
 <h1>Contatos</h1>
@@ -165,7 +166,10 @@
     </footer>
 
     <script src="https://use.fontawesome.com/62e43a72a9.js"></script>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
 
